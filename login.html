@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSMNIA WARDROBE - Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon2.png">
+  <style>
+    .field-error {
+      color: #e74c3c;
+      font-size: 12px;
+      margin-top: 5px;
+      display: none;
+    }
+    
+    .input-error {
+      border-color: #e74c3c !important;
+    }
+    
+    .form-control:focus {
+      border-color: #fb914d;
+      box-shadow: 0 0 0 0.2rem rgba(251, 145, 77, 0.25);
+    }
+    
+    .spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255,255,255,.3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 1s ease-in-out infinite;
+      margin-right: 10px;
+      display: none;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="call">
+        <p>&#128382; Call Us: +92(0)321 6657063</p>
+      </div>
+      <div class="free-shipping">
+        <p>Free Shipping on all orders worth Rs. 6000 & above</p>
+      </div>
+    </div>
+    
+    <nav class="main-bar simplified">
+      <div class="logo-container">
+        <a href="pro1.html">
+          <img src="logo2.png" alt="NSMNIA LOGO" class="logo">
+        </a>
+      </div>
+    </nav>
+    
+    <div class="lower-header">
+      <p>Nsmnia Wardrobe</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="auth-container">
+      <h1 class="auth-title">Login to Your Account</h1>
+      
+      <div id="error-message" class="error-message" style="display: none;"></div>
+      <div id="success-message" class="success-message" style="display: none;"></div>
+      
+      <form id="login-form" novalidate>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          >
+          <div id="email-error" class="field-error">Please enter a valid email address</div>
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Enter your password"
+            required
+          >
+          <div id="password-error" class="field-error">Please enter your password</div>
+        </div>
+        
+        <div class="form-group text-right">
+          <a href="forgetpass.html" class="forgot-password">Forgot Password?</a>
+        </div>
+        
+        <button type="submit" class="btn-primary" id="login-button">
+          <span class="spinner" id="login-spinner"></span>
+          <span>Login</span>
+        </button>
+      </form>
+      
+      <div class="auth-footer">
+        <p>Don't have an account? <a href="signup.html" id="signup-link">Sign Up</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+   <div class="content">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>Nsmnia is a brand who believes in quality over quantity. Our goal is to provide our customers with the most exquisite pieces that showcase the <span class="text-element">finest of craftmenship</span></p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="#"><i class="fas fa-phone-volume"></i>+92 321 6657063</a>
+         </div>
+         <div class="email">
+           <a href="#"><i class="fas fa-envelope"></i>nsmniawardrobe@gmail.com</a>
+         </div>
+         <div class="adress">
+           <a href="#"><i class="fas fa-location-arrow"></i>Nsmnia Textile Mills Ltd.Plot No.H-7, Landhi Industrial Area, Landhi,Karachi, Pakistan.</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="#">Home Delivery</a></div>
+       <div><a href="#">Online Payment</a></div>
+       <div><a href="#">Customer FAQs</a></div>
+       <div><a href="#">Register Complaint</a></div>
+     </div>
+     <div class="right box">
+       <div class="topic">Subscribe to our Newsletter<span class="Newsletter-heart">  &#9825;</span></div>
+       <form action="#">
+         <input type="text" placeholder="Enter email address">
+         <input type="submit" name="" value="Send">
+         <div class="media-icons">
+           <a href="https://www.facebook.com/"target="_blank" ><i class="fab fa-facebook-f"></i></a>
+           <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+           <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
+           <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+           <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+           <a href="https://pk.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </form>
+     </div>
+     <div class="icons-text">Follow us &#58 </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2025 <a href="#">Nsmnia all rights reserved</a></p>
+   </div>
+ </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loginForm = document.getElementById('login-form');
+      const errorMessage = document.getElementById('error-message');
+      const successMessage = document.getElementById('success-message');
+      const loginButton = document.getElementById('login-button');
+      const loginSpinner = document.getElementById('login-spinner');
+      
+      const emailInput = document.getElementById('email');
+      const passwordInput = document.getElementById('password');
+      
+      const emailError = document.getElementById('email-error');
+      const passwordError = document.getElementById('password-error');
+      
+      // Email validation function
+      function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+      
+      // Add redirect parameter to signup link if it exists in the URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const redirect = urlParams.get('redirect');
+      
+      if (redirect) {
+        const signupLink = document.getElementById('signup-link');
+        if (signupLink) {
+          signupLink.href = `signup.html?redirect=${redirect}`;
+        }
+      }
+      
+      // Validate form on submit
+      loginForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Reset error states
+        errorMessage.style.display = 'none';
+        errorMessage.textContent = '';
+        successMessage.style.display = 'none';
+        
+        emailError.style.display = 'none';
+        passwordError.style.display = 'none';
+        
+        emailInput.classList.remove('input-error');
+        passwordInput.classList.remove('input-error');
+        
+        // Get form values
+        const email = emailInput.value.trim();
+        const password = passwordInput.value;
+        
+        let hasError = false;
+        
+        // Validate email
+        if (email === '') {
+          emailError.textContent = 'Please enter your email address';
+          emailError.style.display = 'block';
+          emailInput.classList.add('input-error');
+          hasError = true;
+        } else if (!isValidEmail(email)) {
+          emailError.textContent = 'Please enter a valid email address';
+          emailError.style.display = 'block';
+          emailInput.classList.add('input-error');
+          hasError = true;
+        }
+        
+        // Validate password
+        if (password === '') {
+          passwordError.textContent = 'Please enter your password';
+          passwordError.style.display = 'block';
+          passwordInput.classList.add('input-error');
+          hasError = true;
+        }
+        
+        if (hasError) {
+          return;
+        }
+        
+        // Show loading spinner
+        loginButton.disabled = true;
+        loginSpinner.style.display = 'inline-block';
+        
+        // Simulate a slight delay for better UX (remove in production)
+        setTimeout(function() {
+          // Get registered users
+          const users = JSON.parse(localStorage.getItem('users') || '[]');
+          
+          // Find user with matching email
+          const user = users.find(u => u.email === email);
+          
+          if (!user) {
+            errorMessage.textContent = 'Email not registered. Please sign up first.';
+            errorMessage.style.display = 'block';
+            loginButton.disabled = false;
+            loginSpinner.style.display = 'none';
+            return;
+          }
+          
+          // Check password
+          if (user.password !== password) {
+            errorMessage.textContent = 'Incorrect password. Please try again.';
+            errorMessage.style.display = 'block';
+            loginButton.disabled = false;
+            loginSpinner.style.display = 'none';
+            return;
+          }
+          
+          // Login successful
+          successMessage.textContent = 'Login successful! Redirecting...';
+          successMessage.style.display = 'block';
+          
+          localStorage.setItem('isLoggedIn', 'true');
+          localStorage.setItem('userEmail', email);
+          localStorage.setItem('currentUser', JSON.stringify(user));
+          
+          // Get cart from localStorage if it exists
+          const currentCart = JSON.parse(localStorage.getItem('cart') || '[]');
+          
+          // If there are items in the current cart, save them to the user's cart
+          if (currentCart.length > 0) {
+            // Update user's cart in the users array
+            const updatedUsers = users.map(u => {
+              if (u.email === email) {
+                return { ...u, cart: currentCart };
+              }
+              return u;
+            });
+            
+            localStorage.setItem('users', JSON.stringify(updatedUsers));
+          } else if (user.cart && user.cart.length > 0) {
+            // If user has items in their saved cart, restore them
+            localStorage.setItem('cart', JSON.stringify(user.cart));
+          }
+          
+          // Redirect to homepage or specified redirect URL
+          setTimeout(function() {
+            if (redirect) {
+              window.location.href = redirect;
+            } else {
+              window.location.href = 'homepage.html';
+            }
+          }, 1000);
+        }, 800);
+      });
+    });
+  </script>
+</body>
+</html>

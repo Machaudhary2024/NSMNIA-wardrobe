@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSMNIA WARDROBE - Reset Password</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon2.png">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="call">
+        <p>&#128382; Call Us: +92(0)321 6657063</p>
+      </div>
+      <div class="free-shipping">
+        <p>Free Shipping on all orders worth Rs. 6000 & above</p>
+      </div>
+    </div>
+    
+    <nav class="main-bar simplified">
+      <div class="logo-container">
+        <a href="homepage.html">
+          <img src="logo2.png" alt="NSMNIA LOGO" class="logo">
+        </a>
+      </div>
+    </nav>
+    
+    <div class="lower-header">
+      <p>Nsmnia Wardrobe</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="auth-container">
+      <h1 class="auth-title">Reset Your Password</h1>
+      
+      <div id="success-message" class="success-message" style="display: none;"></div>
+      <div id="error-message" class="error-message" style="display: none;"></div>
+      
+      <form id="email-form">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          >
+          <div class="error-message" id="email-error"></div>
+        </div>
+        
+        <button type="submit" class="btn-primary">
+          Send Reset Code
+        </button>
+        
+        <div class="auth-footer">
+          <p>Remember your password? <a href="login.html">Login</a></p>
+        </div>
+      </form>
+      
+      <form id="code-form" style="display: none;">
+        <div class="form-group">
+          <label for="code">Verification Code</label>
+          <input
+            type="text"
+            id="code"
+            name="code"
+            class="form-control"
+            placeholder="Enter the code sent to your email"
+            required
+          >
+          <div class="error-message" id="code-error"></div>
+        </div>
+        
+        <button type="submit" class="btn-primary">
+          Verify Code
+        </button>
+        
+        <div class="auth-footer">
+          <p>Didn't receive the code? <button type="button" id="resend-btn" class="text-button">Resend</button></p>
+        </div>
+      </form>
+      
+      <form id="password-form" style="display: none;">
+        <div class="form-group">
+          <label for="new-password">New Password</label>
+          <input
+            type="password"
+            id="new-password"
+            name="new-password"
+            class="form-control"
+            placeholder="Enter your new password"
+            required
+          >
+          <div class="error-message" id="new-password-error"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            class="form-control"
+            placeholder="Confirm your new password"
+            required
+          >
+          <div class="error-message" id="confirm-password-error"></div>
+        </div>
+        
+        <button type="submit" class="btn-primary">
+          Reset Password
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+   <div class="content">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>Nsmnia is a brand who believes in quality over quantity. Our goal is to provide our customers with the most exquisite pieces that showcase the <span class="text-element">finest of craftmenship</span></p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="#"><i class="fas fa-phone-volume"></i>+92 321 6657063</a>
+         </div>
+         <div class="email">
+           <a href="#"><i class="fas fa-envelope"></i>nsmniawardrobe@gmail.com</a>
+         </div>
+         <div class="adress">
+           <a href="#"><i class="fas fa-location-arrow"></i>Nsmnia Textile Mills Ltd.Plot No.H-7, Landhi Industrial Area, Landhi,Karachi, Pakistan.</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="#">Home Delivery</a></div>
+       <div><a href="#">Online Payment</a></div>
+       <div><a href="#">Customer FAQs</a></div>
+       <div><a href="#">Register Complaint</a></div>
+     </div>
+     <div class="right box">
+       <div class="topic">Subscribe to our Newsletter<span class="Newsletter-heart">  &#9825;</span></div>
+       <form action="#">
+         <input type="text" placeholder="Enter email address">
+         <input type="submit" name="" value="Send">
+         <div class="media-icons">
+           <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+           <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+           <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
+           <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+           <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+           <a href="https://pk.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </form>
+     </div>
+     <div class="icons-text">Follow us &#58 </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2025 <a href="#">Nsmnia all rights reserved</a></p>
+   </div>
+ </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
